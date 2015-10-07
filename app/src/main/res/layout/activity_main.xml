@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnLoginStartScreen"
+        android:layout_above="@+id/btnNewUser"
+        android:layout_alignLeft="@+id/btnNewUser"
+        android:layout_alignStart="@+id/btnNewUser"
+        android:layout_alignRight="@+id/btnNewUser"
+        android:layout_alignEnd="@+id/btnNewUser" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User"
+        android:id="@+id/btnNewUser"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnDemoMode"
+        android:layout_alignStart="@+id/btnDemoMode"
+        android:layout_alignRight="@+id/btnDemoMode"
+        android:layout_alignEnd="@+id/btnDemoMode" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demo Mode"
+        android:id="@+id/btnDemoMode"
+        android:layout_below="@+id/btnNewUser"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

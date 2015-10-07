@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lytNewUser"
+    tools:context="com.rittie.andy.testing.NewUser">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName"
+        android:layout_below="@+id/tool_bar"
+        android:layout_marginTop="91dp"
+        android:layout_alignRight="@+id/etCreateEmail"
+        android:layout_alignEnd="@+id/etCreateEmail"
+        android:layout_alignLeft="@+id/etCreateEmail"
+        android:layout_alignStart="@+id/etCreateEmail"
+        android:hint="Name"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etCreateEmail"
+        android:layout_below="@+id/tvName"
+        android:layout_centerHorizontal="true"
+        android:hint="Email Address"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etCreatePassword"
+        android:layout_below="@+id/etCreateEmail"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create User"
+        android:id="@+id/button"
+        android:layout_below="@+id/etCreatePassword"
+        android:layout_centerHorizontal="true"
+        android:onClick="newUser" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="A user with that name already exists"
+        android:id="@+id/userAlreadyExists"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff0100" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Invalid Email Address"
+        android:id="@+id/invalidEmalAddress"
+        android:textColor="#ff0100"
+        android:layout_below="@+id/userAlreadyExists"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Invalid Password"
+        android:id="@+id/invalidPassword"
+        android:textColor="#ff0100"
+        android:layout_below="@+id/invalidEmalAddress"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please enter a Name"
+        android:id="@+id/noName"
+        android:textColor="#ff0100"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <!--Here is where you can add more selections in the nav drawer. Each item below constitutes a selection.
+            Each selection can have its text, id, and icon changed respectively. The id of these items are referenced
+            in the switch of any java file that implements the navigation drawer.-->
+
+        <item
+            android:id="@+id/home"
+            android:checked="false"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home_string" />
+
+        <item
+            android:id="@+id/viewArousal"
+            android:checked="false"
+            android:icon="@drawable/ic_arousal"
+            android:title="@string/viewArousal_string" />
+
+        <item
+            android:id="@+id/calculateResting"
+            android:checked="false"
+            android:icon="@drawable/ic_resting"
+            android:title="@string/calcResting_string" />
+
+    </group>
+</menu>
